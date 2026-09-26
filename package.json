@@ -1,0 +1,24 @@
+{
+  "name": "civicqueue-ai",
+  "version": "1.0.0",
+  "description": "CivicQueue AI - Citizen-focused government office queue and document-readiness platform",
+  "scripts": {
+    "install:server": "npm --prefix server install",
+    "install:client": "npm --prefix client install",
+    "install:all": "npm run install:server && npm run install:client",
+    "build": "npm --prefix client run build",
+    "start": "node server/server.js",
+    "server": "node server/server.js",
+    "client": "npm --prefix client run dev",
+    "dev": "node server/server.js"
+  },
+  "keywords": [
+    "civic-tech",
+    "government-services",
+    "queue-management",
+    "document-readiness",
+    "crowdsourcing"
+  ],
+  "author": "Hackathon Team",
+  "license": "MIT"
+}
