@@ -453,7 +453,11 @@ app.get('*', (req, res, next) => {
   }
 });
 
-// Start Express Server
-app.listen(PORT, () => {
-  console.log(`CivicQueue AI Backend running on http://localhost:${PORT}`);
-});
+// Start Express Server locally
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`CivicQueue AI Backend running on http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
